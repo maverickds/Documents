@@ -1,0 +1,13 @@
+CBIR - Extraction, selection and classification
+1. Occlusion
+2. Color Historgram -Statistically, it denotes the joint probability of the intensities of the three color channels.
+3. Image segmentation
+4. Image feature vector
+5. Image matching 
+6. Color models for color coding
+
+
+
+
+References:
+CBIR: https://pdfs.semanticscholar.org/ef5c/d8abf6582886560b89e47793d277204fc734.pdf
