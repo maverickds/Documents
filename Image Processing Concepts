@@ -1,10 +1,19 @@
 CBIR - Extraction, selection and classification
 1. Occlusion
-2. Color Historgram -Statistically, it denotes the joint probability of the intensities of the three color channels.
+2. Color Historgram 
+- Statistically, it denotes the joint probability of the intensities of the three color channels.
+- Color histogram describes the distribution of colors within a whole or within a interest region of image. The histogram is invariant to rotation, translation and scaling of an object but the histogram does not contain semantic information, and two images with similar color histograms can possess different contents.
+The standard measure of similarity used for color histograms:
+- A color histogram H(i) is generated for each image h in the database (feature vector),
+- The histogram is normalized so that its sum equals unity (removes the size of the image),
+- The histogram is then stored in the database,
+- Now suppose we select a model image (the new image to match against all possible targets in the database)
 3. Image segmentation
 4. Image feature vector
 5. Image matching 
 6. Color models for color coding
+7. Image texture:
+- The image texture is majorly captured in a co-occurence matrix. This matrix can be mapped to a few statistical features like: Energy, Inertia, Correlation, DifferenceMoment, Entropy. Also, the same can be used to arrive at two-dimensional Gabor filter
 
 
 
