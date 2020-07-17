@@ -1,0 +1,56 @@
+https://python-data-science.readthedocs.io/en/latest/sl-deeplearning.html
+
+1. Keras accepts numpy input, so we have to convert
+2. For multi-class classification, we can in-place use sparse_categorical_crossentropy for the loss function which will can process the multi-class label without converting to one-hot encoding.
+
+# convert to numpy arrays
+X = np.array(X)
+# OR
+X = X.values
+
+# one-hot encoding for multi-class y labels
+Y = pd.get_dummies(y)
+
+3. It is important to scale or normalise the dataset before putting in the neural network.
+
+from sklearn.preprocessing import StandardScaler
+
+X_train, X_test, y_train, y_test = train_test_split(X, y,
+                                                    random_state = 0)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+4. Model architecture can also be displayed in a graph. Or we can print as a summary
+
+from IPython.display import SVG
+from tensorflow.python.keras.utils.vis_utils import model_to_dot
+
+# To print architecture:
+SVG(model_to_dot(model, show_shapes=True).create(prog='dot', format='svg'))
+
+# To print summary:
+model.summary()
+
+5. The model compiled has a history method (model.history.history) that gives the accuracy and loss for both train & test sets for each time step.
+6. We can plot it out for a better visualization. Alternatively we can also use TensorBoard, which is installed together with TensorFlow package. It will also draw the model architecture.
+
+7. Unlike grid-search we can use Bayesian optimization for a faster hyperparameter tuning.
+
+https://www.dlology.com/blog/how-to-do-hyperparameter-search-with-baysian-optimization-for-keras-model/ https://medium.com/@crawftv/parameter-hyperparameter-tuning-with-bayesian-optimization-7acf42d348e1
+
+8. Activation functions and which one is better:
+https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f
+
+Key hyperparameters:
+Optimizer, Batch Size, Epoch
+
+The amount that the weights are updated during training is referred to as the step size or the “learning rate.” Specifically, the learning rate is a configurable hyperparameter used in the training of neural networks that has a small positive value, often in the range between 0.0 and 1.0. A learning rate that is too large can cause the model to converge too quickly to a suboptimal solution, whereas a learning rate that is too small can cause the process to get stuck.
+
+https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/
+
+Assume you have a dataset with 200 samples (rows of data) and you choose a batch size of 5 and 1,000 epochs. This means that the dataset will be divided into 40 batches, each with 5 samples. The model weights will be updated after each batch of 5 samples. This also means that one epoch will involve 40 batches or 40 updates to the model.
+More here:
+https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/.
+https://machinelearningmastery.com/gentle-introduction-mini-batch-gradient-descent-configure-batch-size/
+https://blog.usejournal.com/stock-market-prediction-by-recurrent-neural-network-on-lstm-model-56de700bff68
