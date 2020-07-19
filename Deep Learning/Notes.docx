@@ -66,3 +66,14 @@ To review, gradient descent is a way to find the minimum of a function. In the c
 Michael Nielsen:
 http://michaelnielsen.org/
 http://neuralnetworksanddeeplearning.com/index.html
+
+Berkley Crash course in ML:
+https://ml.berkeley.edu/blog/posts/crash-course/part-1/
+https://ml.berkeley.edu/blog/posts/crash-course/part-2/
+and so on 
+
+Hyperparameter search using Bayesian Optimization:
+https://www.dlology.com/blog/how-to-do-hyperparameter-search-with-baysian-optimization-for-keras-model/
+
+Text Analytics good links:
+1. Transfer learning for text data: https://www.dlology.com/blog/keras-meets-universal-sentence-encoder-transfer-learning-for-text-data/
