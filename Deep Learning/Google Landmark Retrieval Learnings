@@ -1,0 +1,5 @@
+1. Resnet50 from scratch: https://www.kaggle.com/sandy1112/create-and-train-resnet50-from-scratch
+2. Sample code shared by Google: https://www.kaggle.com/waelkh/landmark2020-delf-model-submission-code
+3. How to submit: https://www.kaggle.com/c/landmark-retrieval-2020/discussion/163350  / https://www.kaggle.com/camaskew/baseline-submission / https://www.tensorflow.org/tutorials/keras/save_and_load#savedmodel_format
+4. Nice EDA: https://www.kaggle.com/muhakabartay/glr2020-google-landmark-retrieval-eda-full
+5. Google github for the project: https://github.com/tensorflow/models/tree/master/research/delf/delf/python/training
