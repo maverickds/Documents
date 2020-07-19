@@ -54,3 +54,15 @@ More here:
 https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/.
 https://machinelearningmastery.com/gentle-introduction-mini-batch-gradient-descent-configure-batch-size/
 https://blog.usejournal.com/stock-market-prediction-by-recurrent-neural-network-on-lstm-model-56de700bff68
+
+Artificial Neural Network (ANN):
+https://ml.berkeley.edu/blog/posts/crash-course/part-3/
+
+Compared to our complex organ, even our most powerful supercomputers are a joke. In 2014, Japanese researchers used a supercomputer to simulate just one second of human brain activity. It took 40 minutes and 9.9 million watts. As for the real thing? The little ball of grey matter in our skulls runs on only 20 watts, which translates to roughly one McChicken a day.
+
+Working of Gradient Descent:
+To review, gradient descent is a way to find the minimum of a function. In the case of a neural network, the function that we want to minimize is the cost function. Gradient descent does this by adjusting the parameters of the network such that we get a lower value from the cost function than before. In a sense, gradient descent “moves” downhill whenever possible like an ant feeling out the slope of the terrain. And each time it moves downhill, the gradient descent “saves” its progress by updating the weights and biases in each neuron. Eventually, gradient descent will have found the very bottom of the cost function.
+
+Michael Nielsen:
+http://michaelnielsen.org/
+http://neuralnetworksanddeeplearning.com/index.html
