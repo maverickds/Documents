@@ -1,0 +1,3 @@
+Aug_Dec2017Data = {}
+for sheet_name in Aug_Dec2017File.sheet_names:
+    Aug_Dec2017Data[sheet_name] = pd.read_excel(file_name, sheetname=sheet_name)
