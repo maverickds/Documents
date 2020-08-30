@@ -1,0 +1,32 @@
+IBM Cloud code: 5f04884f4cc08df26b19a55d32aaeb71
+
+python -m venv env
+
+To connect the pages with a base template, use below to define all possible routines
+href = "{{ url_for('method_name from app.py') }}"
+
+1. render scrollable tables in the page
+2. Defining width of the entire page and individual items in line
+
+
+@app.route('/test')
+def chartTest():
+  lnprice=np.log(price)
+  plt.plot(lnprice)   
+  plt.savefig('/static/images/new_plot.png')
+  
+DQML Architecture:
+1. Profiling: Done in SQL Server Machine Learning Services - save results in the image format
+2. Rules configuration: In SSIS - Save results in exception table and send as email
+3. Outlier Detection: Entire Customer 360 view - summary plot to be shown; highlighted report to be shown and send over email
+
+
+Hi xxx,
+
+Thanks for sharing!
+We have been informed that the standard way of sharing data to TNB vendors is through TNB cloud. Can you please follow the same for this file? Also, please attach a password to this file link so that it's not publicly accessible
+
+Hi xxx,
+
+Thanks for sharing!
+Can you please attach a password to this file link so that it's not publicly accessible?
